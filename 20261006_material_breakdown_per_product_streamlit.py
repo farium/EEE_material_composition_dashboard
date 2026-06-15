@@ -30,9 +30,6 @@ def load_excel():
 # Load your data
 data = load_excel()
 
-
-#data = load_excel(FILE_PATH)
-
 UNU_TO_PRODUCT = {
     "0108": "Fridges (incl. combi-fridges)",
     "0109": "Freezers",
