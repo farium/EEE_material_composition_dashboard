@@ -10,6 +10,16 @@ import io
 st.set_page_config(page_title="Material Composition Explorer", layout="wide")
 st.title("📊 Product Material Composition Explorer")
 
+st.markdown("""
+This dashboard allows you to:
+- Compare material composition across products  
+- Track changes over time  
+- Explore critical raw materials (CRM)
+
+Data was collected by [Nils Pauliks](https://www.universiteitleiden.nl/en/staffmembers/nils-pauliks#tab-1), the dashboard created by Pablo Ilgemann [Pablo Ilgemann](https://www.universiteitleiden.nl/en/staffmembers/pablo-ilgemann#tab-1).
+""")
+
+
 # -----------------------------
 # LOAD DATA (STATIC FILE)
 # -----------------------------
