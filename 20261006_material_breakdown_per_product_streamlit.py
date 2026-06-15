@@ -31,7 +31,7 @@ def load_excel():
 sheets = load_excel()
 
 
-data = load_excel(FILE_PATH)
+#data = load_excel(FILE_PATH)
 
 UNU_TO_PRODUCT = {
     "0108": "Fridges (incl. combi-fridges)",
