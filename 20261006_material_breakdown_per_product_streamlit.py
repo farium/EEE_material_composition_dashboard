@@ -16,7 +16,9 @@ This dashboard allows you to:
 - Track changes over time  
 - Explore critical raw materials (CRM)
 
-Data was collected by [Nils Pauliks](https://www.universiteitleiden.nl/en/staffmembers/nils-pauliks#tab-1), the dashboard created by Pablo Ilgemann [Pablo Ilgemann](https://www.universiteitleiden.nl/en/staffmembers/pablo-ilgemann#tab-1).
+Data was collected by [Nils Pauliks](https://www.universiteitleiden.nl/en/staffmembers/nils-pauliks#tab-1), the dashboard created by [Pablo Ilgemann](https://www.universiteitleiden.nl/en/staffmembers/pablo-ilgemann#tab-1).
+
+Details on the underlying data can be obtained by reaching out to the authors.
 """)
 
 
