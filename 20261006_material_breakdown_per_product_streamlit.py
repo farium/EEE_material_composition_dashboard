@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import base64
+import io
 
 # -----------------------------
 # CONFIG
@@ -11,13 +13,23 @@ st.title("📊 Product Material Composition Explorer")
 # -----------------------------
 # LOAD DATA (STATIC FILE)
 # -----------------------------
-FILE_PATH = "input_data/material_composition_UNU_keys-DESKTOP-OU0J3S4.xlsx"  # <-- place your Excel file in the same folder
 
 @st.cache_data
-def load_excel(path):
-    xls = pd.ExcelFile(path)
+def load_excel():
+    # Decode the Excel file from secrets
+    file_bytes = base64.b64decode(st.secrets["EXCEL_FILE"])
+    
+    # Create a file-like object
+    xls = pd.ExcelFile(io.BytesIO(file_bytes))
+    
+    # Load all sheets into a dictionary
     sheets = {sheet: xls.parse(sheet) for sheet in xls.sheet_names}
+    
     return sheets
+
+# Load your data
+sheets = load_excel()
+
 
 data = load_excel(FILE_PATH)
 
