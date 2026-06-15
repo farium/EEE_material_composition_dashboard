@@ -28,7 +28,7 @@ def load_excel():
     return sheets
 
 # Load your data
-sheets = load_excel()
+data = load_excel()
 
 
 #data = load_excel(FILE_PATH)
